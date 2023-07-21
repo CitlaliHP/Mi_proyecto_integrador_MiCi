@@ -1,0 +1,3 @@
+nombre;precio;descripción;imagen;categoria;disponibilidad
+Jugo;$25.00;Jugo de naranja;juego.jpg;Bebidas;true
+Fruta;$10;Manzana;manzana.jpg;Frutas y verduras;true
