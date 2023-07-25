@@ -16,7 +16,11 @@ Desarrollar una página web que permita a los estudiantes universitarios elegir 
 ## Objetivos específicos:
 
 1.-Crear una interfaz de usuario intuitiva y fácil de usar para que los estudiantes puedan registrarse, iniciar sesión y hacer sus pedidos.
+
 2.-Desarrollar un sistema de pedidos que permita a los estudiantes elegir sus alimentos y enviar su pedido a la cafetería.
+
 3.-Implementar un sistema de notificaciones para que el administrador de la cafetería reciba los pedidos en tiempo real.
+
 4.-Diseñar un sistema de seguimiento de pedidos para que el administrador pueda ver el historial de pedidos y los estudiantes puedan llevar un registro de sus hábitos alimenticios.
+
 5.-Realizar pruebas con un grupo de estudiantes para asegurarse de que la página web funciona correctamente y es fácil de usar.
