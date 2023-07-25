@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -84,6 +84,8 @@
                     if (xhr.status === 200) {
                         // Si la solicitud se completó correctamente, actualizamos el texto del botón
                         var boton = document.querySelector("li button[data-id='" + id_comida + "']");
+                        //Asigna el valor de nuevoTexto en función del valor de xhr.responseText. Si xhr.responseText es igual a "1", entonces nuevoTexto se asigna el valor " Cambiar a no disponible". De lo contrario, se le asigna el valor "Cambiar a disponible"
+                        // xhr.responseText es una propiedad del objeto XMLHttpRequest que devuelve la respuesta del servidor como una cadena de texto
                         var nuevoTexto = xhr.responseText === "1" ? " Cambiar a no disponible" : "Cambiar a disponible";
                         boton.textContent = nuevoTexto;
                     } else {
