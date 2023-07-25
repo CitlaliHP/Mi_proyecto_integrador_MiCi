@@ -21,6 +21,6 @@ Desarrollar una página web que permita a los estudiantes universitarios elegir 
 
 3.-Implementar un sistema de notificaciones para que el administrador de la cafetería reciba los pedidos en tiempo real.
 
-4.-Diseñar un sistema de seguimiento de pedidos para que el administrador pueda ver el historial de pedidos y los estudiantes puedan llevar un registro de sus hábitos alimenticios.
+4.-Diseñar un sistema de seguimiento de pedidos para que el administrador pueda ver el historial de pedidos.
 
 5.-Realizar pruebas con un grupo de estudiantes para asegurarse de que la página web funciona correctamente y es fácil de usar.
