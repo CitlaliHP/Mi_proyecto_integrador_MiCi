@@ -40,9 +40,12 @@ try {
     }
 
     // Devolver los productos disponibles en formato JSON
+    // Con json_encode se puede traducir cualquier cosa codificada de PHP a un string JSON
+    // Los objetos se inspeccionan y sus atributos públicos se convierten. Esto ocurre de forma recursiva, por lo que los atributos del objeto disponibilidad también se traducen en JSON. Esta es una forma de transmitir fácilmente los productos en JSON, el lado del cliente podrá tomar el tiempo real y el timezone.
     echo json_encode($productos);
 } catch (Exception $e) {
     // En caso de presentarse un error, se mostrará un mensaje de error
     echo json_encode(array("error" => "Se presentó un error al cargar los productos: " . $e->getMessage()));
 }
 ?>
+
