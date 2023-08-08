@@ -5,6 +5,11 @@
     <title>Inicio de sesión</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style-home.css">
+    <script>
+        function redirectTocontacto() {
+            window.location.href = "contacto.html";
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -22,10 +27,14 @@
                         <label for="contraseña"><span class="number">2</span>Contraseña</label>
                         <input type="password" name="contraseña" id="contraseña" class="input-padron" required>
                     </fieldset>
+                    <div class="botones">
+                        <button type="button" onclick="redirectTocontacto()" class="enviar">¿Aún no tienes cuenta? Registrate aquí</button> &nbsp; &nbsp; &nbsp;
+                        <input type="submit" value="Iniciar sesión" class="enviar">
+                    </div> 
                 </div>
-                &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="submit" value="Iniciar sesión" class="enviar">
             </form>
         </div>
     </main>
 </body>
 </html>
+
