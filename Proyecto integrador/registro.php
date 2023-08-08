@@ -1,4 +1,10 @@
 <?php
+
+session_unset();
+session_destroy();
+
+session_start();
+
 $servername = "127.0.0.1";
 $username = "root";
 $password = "12345";
@@ -23,11 +29,15 @@ try
   $contraseña = $_POST['contraseña'];
   $periodo = $_POST['periodo'];
 
+  // Hashear la contraseña usando password_hash() y generar un salt único
+  $hashedPassword = password_hash($contraseña, PASSWORD_DEFAULT);
+
   // Insertar los datos en la base de datos
-  $sql = "INSERT INTO registros (matricula, nombre, carrera, grupo, apellidoPaterno, apellidoMaterno, contraseña, periodo) VALUES ('$matricula', '$nombre', '$carrera', '$grupo', '$apellidoPaterno', '$apellidoMaterno', '$contraseña', '$periodo' )";echo 'sql: ',  $sql, "\n";
+  $sql = "INSERT INTO registros (matricula, nombre, carrera, grupo, apellidoPaterno, apellidoMaterno, contraseña, periodo) VALUES ('$matricula', '$nombre', '$carrera', '$grupo', '$apellidoPaterno', '$apellidoMaterno', '$hashedPassword', '$periodo' )";
 
   if ($conn->query($sql) === TRUE) {
     echo "Registro exitoso";
+    $_SESSION["matricula"] = $matricula;
     // Redirigir a otra página después del registro exitoso
     header("Location: productos.php");
     exit;
