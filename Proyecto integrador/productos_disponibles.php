@@ -48,4 +48,3 @@ try {
     echo json_encode(array("error" => "Se presentó un error al cargar los productos: " . $e->getMessage()));
 }
 ?>
-
