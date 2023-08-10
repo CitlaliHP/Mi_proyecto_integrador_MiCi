@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style-home.css">
+    <script>
+        function redirectTocontacto() {
+            window.location.href = "contacto.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/logo.png"></h1>
+        </div>
+    </header>
+    <main>
+        <div>
+            <form method="POST" action="procesar_login.php">
+                <div>
+                    <fieldset>
+                        <label for="matricula"><span class="number">1</span>Matrícula</label>
+                        <input type="text" name="matricula" id="matricula" class="input-padron" required placeholder="xxxxxxxx">
+                        <label for="contraseña"><span class="number">2</span>Contraseña</label>
+                        <input type="password" name="contraseña" id="contraseña" class="input-padron" required>
+                    </fieldset>
+                    <div class="botones">
+                        <button type="button" onclick="redirectTocontacto()" class="enviar">¿Aún no tienes cuenta? Registrate aquí</button> &nbsp; &nbsp; &nbsp;
+                        <input type="submit" value="Iniciar sesión" class="enviar">
+                    </div> 
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

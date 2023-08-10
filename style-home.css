@@ -1,0 +1,257 @@
+html {
+    background: rgb(4,44,156);
+    background: radial-gradient(circle, rgba(4,44,156,1) 0%, rgba(4,52,127,1) 16%, rgba(120,135,190,1) 93%);
+}
+img{
+    border-radius: 10%;
+}
+header{
+padding: 20px 0;
+}
+
+.titulo-principal{
+    text-align:center;
+    font-size: 3em;
+    margin: 0 0 1em;
+    clear: left;
+}
+.usuario{
+    font-size: 1.5em;
+    
+}
+
+form {
+font-size: 2em;
+max-width: 300px;
+margin: 10px auto;
+padding: 10px 20px;
+background: #6c76a0;
+border-radius: 8px;
+}
+input{
+    font-size: unset;
+    text-align: center;
+
+}
+
+h1 {
+margin: 0 0 30px 0;
+text-align: center;
+}
+select {
+background: rgba(255,255,255,0.1);
+border: none;
+font-size: 16px;
+height: auto;
+margin: 0;
+outline: 0;
+padding: 15px;
+width: 100%;
+background-color: #e8eeef;
+color: #8a97a0;
+box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+margin-bottom: 30px;
+}
+select {
+padding: 6px;
+height: 43px;
+border-radius: 2px;
+font-size: 25px;
+width: 400px;
+}
+
+
+fieldset {
+margin-bottom: 30px;
+border-radius: 30%;
+}
+
+
+label {
+display: block;
+margin-bottom: 15px;
+}
+
+label.light {
+font-weight: 300;
+display: inline;
+}
+
+.number {
+background-color: #9aa5c2;
+color: #000000;
+height: 30px;
+width: 30px;
+display: inline-block;
+font-size: 0.8em;
+margin: 10px;
+line-height: 30px;
+text-align: center;
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+form {
+    max-width: 480px;
+}
+
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #201C96;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgb(28, 3, 75);
+    transform: scale(1.2) ;
+   
+}
+.botones{
+    display: flex;
+    justify-content: center;
+}
+.botones-cerrarSesion{
+    top: 4px;
+    right: 2px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #201C96;
+    border: none;
+    border-radius: 5px;
+}
+/*.boton2{
+    display: flex;
+    justify-content: center;
+}
+/*Aqui inicia selector para mostrar home*/
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    vertical-align: top;
+    margin: 1.5% 1.5%;
+    padding: 30px 35px;
+    margin-top: 1.5%;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 30px;
+
+}
+.productos-seleccionados{
+    position: fixed;
+    top: 2px;
+    right: 2px;
+}
+.productos-administrador{
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    vertical-align: top;
+    margin: 1.5% 1.5%;
+    padding: 30px 35px;
+    margin-top: 1.5%;
+    box-sizing: border-box;
+    background-color: #8a97a0;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 30px;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+.productos li:active{
+    border-color: #088c19;
+}
+
+/*Aqui inicia selector para mostrar HISTORIAL*/
+/* Agrega este estilo en tu archivo style-home.css o en una sección de estilo en el head de tu documento HTML */
+
+/* Estilos generales para la tabla */
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilos para las celdas de encabezado */
+th {
+    background-color: #167F92;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Estilos para las celdas de datos */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos alternados para filas */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover para resaltar filas al pasar el cursor */
+tr:hover {
+    background-color: #f0e6f7;
+    transition: background-color 0.2s;
+}
+
+/* Ajusta el ancho de las celdas */
+th:first-child,
+td:first-child {
+    width: 10%;
+}
+
+/* Alineación vertical y color de texto para las celdas de precio y cantidad */
+td:nth-child(5),
+td:nth-child(6),
+td:nth-child(7) {
+    text-align: center;
+}
+
+
+/* Ajusta el margen superior de la tabla */
+table {
+    margin-top: 20px;
+}
+
+
+/* Agrega este estilo en tu archivo style-home.css */
+
+/* Estilo para las filas con la misma ID de orden (color 1) */
+.orden-row.color-1 {
+    background-color: #54bdf6; /* Cambia el color de fondo según tus preferencias */
+}
+
+/* Estilo para las filas con la misma ID de orden (color 2) */
+.orden-row.color-2 {
+    background-color: #47ed94; /* Cambia el color de fondo según tus preferencias */
+}
+
+/* Estilo para las filas con la misma ID de orden (color 3) */
+.orden-row.color-3 {
+    background-color: #81f946; /* Cambia el color de fondo según tus preferencias */
+}

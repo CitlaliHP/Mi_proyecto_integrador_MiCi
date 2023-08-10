@@ -1,0 +1,12 @@
+id_comida;nombre;precio;descripción;imagen;categoria;disponibilidad
+5;Desayunos;35;Huevos al gusto (2pzas), tortillas o telera, café o té;desayuno.jpg;Desayuno;1
+6;Cóctel de frutas ;28;Fruta picada (sandía, papaya, melón, platano);coctel.jpg;Frutas y verduras;1
+7;Burrito campechano;30;"harina de trigo; los ingredientes son bistec de res y carne al pastor y se acompañan con queso fundido";burrito.jpg;Comida rapida;1
+8;Enchiladas suizas ;40;(4 pzas) tortillas con salsa es preparada con crema y son gratinadas con queso manchego.;enchiladas.jpg;Plato fuerte;1
+9;Papas a la francesa;30;Papas costadas en bastones fritas en aceite caliente hasta que queden doradas, crujientes para luego retirarlas del aceite y luego sazonarlas con sal;papas.jpg;Comida rapida;1
+10;Croissant;25;Croissant;croissant.jpg;Comida rapida;1
+11;Nuggets;30;Nuggets;nuggets.jpg;Comida rapida;1
+12;Molletes;20;Consiste en un pan tipo bolillo o telera cortado por la mitad y untado con frijoles refritos y luego gratinado con queso en el horno;molletes.jpg;Comida rapida;1
+13;Cappuccino;15;Preparada con café expreso y leche montada con vapor para darle cremosidad;capuchino.jpg;Desayuno;1
+14;Café de olla;10;Consiste en aromatizarlo con canela y piloncillo;cafe.jpg;Desayuno;1
+15;Enchiladas ;15;Tortilla de maíz doblada o enrollada, cubierta con salsa de chile y normalmente rellena de pollo;enchiladasmex.jpg;Plato fuerte;1
